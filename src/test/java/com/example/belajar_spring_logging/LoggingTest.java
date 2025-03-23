@@ -16,4 +16,11 @@ public class LoggingTest {
         log.warn("Belajar Spring");
         log.error("Belajar Programmer Zaman Now");
     }
+
+    @Test
+    void testLongLogging() {
+        for(int i=0; i < 1000; i++) {
+            log.warn("Hello World {}", i);
+        }
+    }
 }
